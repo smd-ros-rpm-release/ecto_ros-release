@@ -1,0 +1,12 @@
+Source: ros-fuerte-ecto-ros
+Section: misc
+Priority: extra
+Maintainer: Vincent Rabaud <vrabaud@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), libeigen3-dev, ros-fuerte-catkin, ros-fuerte-common-msgs, ros-fuerte-ecto, ros-fuerte-genmsg, ros-fuerte-langs, ros-fuerte-opencv2, ros-fuerte-ros-comm, ros-fuerte-std-msgs
+Homepage: http://ecto.willowgarage.com/recognition
+Standards-Version: 3.9.2
+
+Package: ros-fuerte-ecto-ros
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libeigen3-dev, ros-fuerte-common-msgs, ros-fuerte-ecto, ros-fuerte-opencv2, ros-fuerte-ros-comm, ros-fuerte-std-msgs
+Description: A set of generic cells to interact with ROS
