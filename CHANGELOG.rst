@@ -2,6 +2,11 @@
 Changelog for package ecto_ros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.4.1 (2014-03-10)
+------------------
+* fix farm errors on Indigo
+* Contributors: Vincent Rabaud
+
 0.4.0 (2014-03-04)
 ------------------
 * add rosmsg dependency for message generation
