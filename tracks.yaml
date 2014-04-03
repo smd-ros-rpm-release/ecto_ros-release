@@ -76,5 +76,5 @@ tracks:
     release_tag: :{version}
     ros_distro: indigo
     vcs_type: git
-    vcs_uri: https://github.com/plasmodic/ecto_ros.git
+    vcs_uri: /home/vrabaud/workspace/recognition_kitchen/src/ecto_ros
     version: :{auto}
