@@ -57,7 +57,7 @@ macro(pubsub_gen_wrap ROS_PACKAGE)
 
   if(NOT ${ROS_PACKAGE}_srcs)
     _set_ros_env()
-    execute_process(COMMAND ${ECTO_ROS_GEN_MSG_WRAPPERS} ${ARGN_CLEAN}
+    execute_process(COMMAND ${CATKIN_ENV} ${ECTO_ROS_GEN_MSG_WRAPPERS} ${ARGN_CLEAN}
       OUTPUT_VARIABLE ${ROS_PACKAGE}_srcs
       ERROR_VARIABLE ${ROS_PACKAGE}_err
       RESULT_VARIABLE ${ROS_PACKAGE}_res
@@ -85,7 +85,7 @@ macro(pubsub_gen_wrap ROS_PACKAGE)
     message(STATUS "+ ${ROS_PACKAGE}: ${len} message types")
   endif()
 
-  include_directories(SYSTEM ${ecto_INCLUDE_DIRS}
+  include_directories(${ecto_INCLUDE_DIRS}
                              ${ecto_ros_INCLUDE_DIRS}
                              ${roscpp_INCLUDE_DIRS}
                              ${CMAKE_BINARY_DIR}/gen/cpp/${ROS_PACKAGE}
